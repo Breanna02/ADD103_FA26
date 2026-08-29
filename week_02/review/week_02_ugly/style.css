@@ -1,13 +1,88 @@
-/* General Page Styles */
+/* Base page styling: sets the overall background, page spacing, and font choices for the document. */
+/* Text and heading styling: controls the color, alignment, and spacing for headings, paragraphs, and quote blocks. */
 body {
   background-color: #1fff18;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-  margin: 0;
-  padding: 0;
+  background-image: url('woosh.png');
+  background-repeat: no-repeat;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 13px;
+}
+
+h1 {
+  color: #ff00d4;
+  font-family:monospace;
+  font-size: 65px;
+  margin-top: -45px;
+  border-left: 35px solid #ff0000;
+  border-right: 55px solid #0026ff;
+  border-bottom: 22px solid #9dff00;
 }
 
 h2 {
-  color: #ff2424;
-  font-size: 1.5em;
-  margin: 0.5em 0;
+  color: #ff0000;
+  text-align:right;
+  font-size: x-large;
+  margin: 3px;
+  padding: 3px;
+  line-height: 2.5;
+  background-color: rgba(18, 22, 4, 1);
+  background-image: url('loading.gif');
+  background-size:100px;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.center {
+  text-align: center;
+  font-size: large;
+  font-family:'Segoe UI';
+  border-bottom: 22px solid #f5b62e;
+}
+
+blockquote {
+  color: #ffffff;
+  font-style: italic;
+  margin: 5px;
+  padding: 45px;
+  border-left: 15px solid #0026ff;
+  background-color: rgba(200, 255, 2, 0.8);
+  background-image: url('star.gif');
+  background-size: 110px;
+  background-position:right;
+  background-repeat: no-repeat;
+}
+
+p {
+  color: #000000;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold';
+  font-size: large;
+  margin: 20px;
+  line-height: 1.5;
+}
+
+p2 {
+  color: #ff07a0;
+  font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size:xx-large;
+  margin:10px;
+  line-height: 2.5;
+  border-left:55px solid #fcfcfd;
+  background-color: rgba(18, 22, 4, 1);
+}
+
+p3 {
+  color: #000000;
+  font-family:'Lucida Grande';
+  font-size:xx-large;
+  margin:40px;
+  padding:30px;
+  border-right:55px solid #fcfcfd;
+  background-color: rgb(255, 0, 0);
+}
+
+p4 {
+  color: #000000;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:smaller;
+  border-right:55px solid #ff0000;
 }
