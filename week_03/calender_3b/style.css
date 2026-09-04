@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(227, 247, 253);
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    table-layout: fixed;
+    
+}
+
+th {
+    background-color: darkslategray;
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+    height: 40px;
+    font-size: larger;
+}
+
+.empty-day {
+    background-color: #f5f5f5;
+    color: #444444;
+    font-style: italic;
+}
+
+caption {
+    caption-side: top;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+td {
+    border: 1px solid rgb(41, 5, 41);
+    padding: 10px;
+    text-align: right;
+    vertical-align: top;
+    height: 100px;
+}
+
+.birthday {
+    background-color: #ffcccb;
+    position: relative;
+    color: #5c3636;
+    font-weight: bold;
+}
+
+.birthday img {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    right: 3px;
+    top: 7px;
+    z-index: 0;
+}
+
+.birthday span {
+    position: relative;
+    z-index: 1;
+}
