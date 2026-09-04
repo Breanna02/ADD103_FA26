@@ -1,0 +1,52 @@
+body {
+    background-color:darkslategray;
+    color:beige;
+    line-height: 2;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* styles all images */
+.gallery-pic{
+    max-width: 300px;
+    height: auto;
+    border: 4px solid rgb(0, 0, 0);
+    margin: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: center;
+    width: 75%;
+}
+
+/* styles images inside the container class */
+.container{
+    width: 94%;
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(119, 77, 56);
+    min-height: 100px;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+.button{
+    width: 75%;
+    background-color: rgb(119, 77, 56);
+    border: 2px solid ivory;
+    min-height: 50px;
+    width: 34%;
+    padding: 20px;
+    margin: 20px auto;
+    color: ivory;
+    font-size: 18px;
+    border-radius: 10px;
+    float: left;
+}
