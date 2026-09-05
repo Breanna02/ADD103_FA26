@@ -1,0 +1,48 @@
+body{
+    background-color: #cb997e;
+    line-height: 2;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.containers {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.container, .container2{
+    flex: 0 0 16%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffe8d6;
+}
+
+ol{
+    font-weight: bold;
+}
+
+ol ol{
+    list-style-type: lower-alpha;
+}
+
+ul{
+    list-style-type: square;
+}
+
+ul ul{
+    list-style-type: circle;
+}
+
+.container h2,
+.container h3,
+.container2 h2,
+.container2 h3 {
+    text-align: center;
+}
