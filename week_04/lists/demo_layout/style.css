@@ -1,0 +1,61 @@
+:root{
+    --background: rgb(92, 12, 92);
+    --text: rgb(222, 211, 211);
+}
+
+
+body {
+    background-color: var(--text);
+}
+
+header {
+    background-color: var(--background);
+    min-height: 100px;
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline; 
+    color: var(--text);
+}
+
+header h1 {
+    padding-top: 30px;
+}
+
+main {
+    background-color: var(--background);
+    min-height: 200px;
+    color: var(--text);
+    width: 75%;
+    margin: 20px 2.5% 20px 2.5%;
+}
+
+aside {
+    background-color: var(--background);
+    width: 25%;
+    color: var(--text);
+    float: right;
+    margin: 20px 2.5% 20px 2.5%;
+}
+
+footer {
+    background-color: var(--background);
+    min-height: 100px;
+    color: var(--text);
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    background: grey;
+    margin: 0 auto;
+}

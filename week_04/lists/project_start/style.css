@@ -1,0 +1,10 @@
+:root{
+    --brand-color: purple;
+    --light-text: whitesmoke;
+    --dark-text: black;
+    --accent-color: gold;
+}
+
+body {
+background: rgb(219, 219, 219);
+}
