@@ -1,0 +1,48 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* mccweb.net for colors */
+:root{
+    --dark-shade:#593E2E;
+    --lighter-shade: #8C5B3E;
+    --midtone: #BF9B7A;
+    --highlight: #F2E6D8;
+    --secondary-color: #555934;
+    --secondary-highlight: #8d9253;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    min-height: 400px;
+}
+
+.hero-text, hero-image{
+    flex-basis: 50%;
+    flex-grow: 1;
+
+}
+
+.container{
+    width: 80%;
+    margin: 20px auto;
+    max-width: 1200px;
+    background: var(--highlight);
+}
+
+body{
+    background: var(--highlight);
+    color: var(--midtone);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div, header, aside, main, footer{
+    border: 2px solid #593E2E;
+    min-height: 200px;
+    min-width: 250px;
+    background: var(--lighter-shade);
+}
