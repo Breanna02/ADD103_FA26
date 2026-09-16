@@ -1,0 +1,48 @@
+body{
+    background-color:rgb(194, 225, 255);
+    color:rgb(81, 120, 194)
+}
+
+.gallery-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 30%;
+    padding: 20px auto;
+    margin: 15px auto;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card img{
+    box-sizing: border-box;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+h1{
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 4px rgba(100, 149, 237, 0.3);
+}
+
+h3{
+    text-align:center;
+    font-size:22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 0px 0px 0px;
+}
+
+p{
+    padding: 0px 20px;
+    margin-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;  
+}
