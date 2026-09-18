@@ -9,40 +9,129 @@
 :root{
     --dark-shade:#593E2E;
     --lighter-shade: #8C5B3E;
-    --midtone: #BF9B7A;
-    --highlight: #F2E6D8;
-    --secondary-color: #555934;
-    --secondary-highlight: #8d9253;
+    --midtone: #ceac8b;
+    --highlight: #ecddcd;
+    --secondary-color: #535733;
+    --secondary-highlight: #c3c97f;
+    --text: #040404;
 }
 
 .hero{
     display: flex;
     align-items: center;
+    justify-content: center;
     min-height: 400px;
 }
 
-.hero-text, hero-image{
+.hero-text, .hero-image{
     flex-basis: 50%;
     flex-grow: 1;
+    padding: 20px;
+    border: none;
+    background: rgba(0,0,0,0);
+}
 
+.hero-image img{
+    width: 75%;
+    margin: 10px auto;
+    padding: 20px;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3));
 }
 
 .container{
     width: 80%;
     margin: 20px auto;
     max-width: 1200px;
-    background: var(--highlight);
+    display: flex;
+    align-items: center;
+    min-height: 400px;
 }
 
 body{
-    background: var(--highlight);
-    color: var(--midtone);
+    background: var(--midtone);
+    color: var(--text);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 div, header, aside, main, footer{
-    border: 2px solid #593E2E;
     min-height: 200px;
     min-width: 250px;
-    background: var(--lighter-shade);
 }
+
+footer{
+    background: none;
+    text-align: center;
+    color: var(--text);
+    border: none;
+    padding: 40px;
+}
+
+header{
+    background-color: var(--dark-shade);
+    border: none;
+    color: var(--highlight)
+}
+
+h1{
+    color: var(--secondary-highlight);
+    font-size:45px;
+    text-align: center;
+    filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.3));
+}
+
+aside{
+    flex-basis: 20%;
+    flex-grow: 1;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 6px;
+    background-color: var(--secondary-highlight);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+aside h3{
+    color: var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+main{
+    flex-basis: 75%;
+    flex-grow: 1;
+    padding: 20px;
+    margin-top: 10px;
+    margin-right: 5%;
+    border-radius: 6px;
+    background-color: var(--highlight);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main h2{
+    color: var(--dark-shade);
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+header p{
+    text-align:center;
+    font-size: 18px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    padding-inline-start: 20px;
+}
+
+aside img{
+    max-width: 210px;
+    border-radius: 10px;
+}
+
+main img{
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    max-width: 545px;
+    margin: 0 auto;
+
+} 
