@@ -1,0 +1,112 @@
+:root {
+    --bg: #ebebeb;
+    --panel: #f7f7f7;
+    --text: #1e1e1e;
+    --muted: #4d4d4d;
+    --label: #666;
+    --line: rgba(0, 0, 0, 0.12);
+    --shadow: rgba(0, 0, 0, 0.05);
+    --shadow-strong: rgba(0, 0, 0, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page-shell {
+    width: min(960px, 88vw);
+    background: var(--panel);
+    border: 1px solid var(--line);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+
+.site-header {
+    background: #f1f0f4;
+    border-bottom: 1px solid var(--line);
+}
+
+.hero-banner {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+    gap: 24px;
+}
+
+.hero {
+    padding: 20px 20px 14px;
+    text-align: center;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: clamp(2rem, 2.8vw, 3rem);
+    color: var(--text);
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.hero-banner img {
+    height: 220px;
+}
+
+.gallery-shell {
+    padding: 20px 18px 18px;
+    border-bottom: 1px solid var(--line);
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.main-display {
+    grid-column: 1 / -1;
+    height: 320px;
+    overflow: hidden;
+    background: #2d2b2a;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.thumb {
+    height: 165px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.thumb-1 { grid-column: 1; }
+.thumb-2 { grid-column: 2; }
+.thumb-3 { grid-column: 3; }
+.thumb-4 { grid-column: 4; }
+.thumb-5 { grid-column: 5; }
+
+.site-footer {
+    padding: 16px 18px 18px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
