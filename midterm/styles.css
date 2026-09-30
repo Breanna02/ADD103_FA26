@@ -3,3 +3,16 @@
     padding: 0;
     margin: 0;
 }
+
+:root{
+    --test
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+/* https://minecraftshop.com/collections/posters?srsltid=AU7gw4Wi2ObYS1oZ0GEHhsBLXQgZIs1f84lhHTXAriyMki528alaBelA */
+
+/* https://www.pngitem.com/middle/JTJxio_minecraft-zombie-png-minecraft-zombie-transparent-png/ */
