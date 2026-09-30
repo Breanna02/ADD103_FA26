@@ -11,12 +11,12 @@
     --highlight: #edf2ed;
 }
 
-body{
+body {
     background-color: var(--secondary);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.gallery-container{
+.gallery-container {
     display:grid;
     margin: 20px auto;
     padding: 20px;
