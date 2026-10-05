@@ -4,13 +4,103 @@
     margin: 0;
 }
 
-:root{
-    --test
+/* Colors created with the help of AI */
+:root {
+    --color-ink: #20352a;
+    --color-green: #456b3b;
+    --color-blue: #008f91;
+    --color-gold: #d4a13a;
+    --color-paper: #f4f2e8;
+    --color-white: #fffefa;
 }
 
-nav{
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+.site-header {
+    width: min(100%, 72rem);
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    border-bottom: 3px solid var(--color-green);
+}
+
+.site-title {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--color-ink);
+    font-size: 1.45rem;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+}
+
+.site-nav ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    list-style: none;
+}
+
+.site-nav a {
+    display: block;
+    padding: 9.6px 12px;
+    border-bottom: 3px solid transparent;
+    color: var(--color-ink);
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+    border-bottom-color: var(--color-gold);
+    color: var(--color-blue);
+}
+
+.page-content {
+    flex: 1;
+    min-height: 8rem;
+}
+
+.site-footer {
+    padding: 20px 24px;
+    background: var(--color-ink);
+    color: var(--color-white);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 600px) {
+    .site-header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 20px 24px;
+    }
+
+    .site-title {
+        text-align: left;
+    }
+
+    .site-nav ul {
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+
+    .page-content {
+        min-height: 12rem;
+    }
 }
 
 /* https://minecraftshop.com/collections/posters?srsltid=AU7gw4Wi2ObYS1oZ0GEHhsBLXQgZIs1f84lhHTXAriyMki528alaBelA */
