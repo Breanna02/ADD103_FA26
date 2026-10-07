@@ -64,7 +64,7 @@ body {
 .site-nav a:hover,
 .site-nav a[aria-current="page"] {
     border-bottom-color: var(--color-gold);
-    color: var(--color-blue);
+    color: var(--color-green);
 }
 
 .page-content {
