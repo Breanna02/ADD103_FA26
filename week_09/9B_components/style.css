@@ -1,0 +1,49 @@
+/* Colors created with help from AI */
+
+:root {
+    --color-ink: #17131f;
+    --color-plum: #382039;
+    --color-card: #5b3b5e;
+    --color-paper: #f8f9fa;
+}
+
+.album-header {
+    background-color: var(--color-plum);
+    text-align: center;
+}
+
+.album-footer {
+    background-color: var(--color-plum);
+}
+
+.navbar-brand {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.75rem;
+    letter-spacing: 0.04em;
+}
+
+.navbar-nav .nav-link {
+    cursor: pointer;
+    border-radius: 0.375rem;
+    transition: color 150ms ease, background-color 150ms ease, transform 150ms ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--color-paper);
+    background-color: rgb(255 255 255 / 12%);
+    transform: translateY(-2px);
+}
+
+.movie-card {
+    overflow: hidden;
+    border: 0;
+    background-color: var(--color-card);
+    color: var(--color-paper);
+}
+
+.movie-card img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border: 0 !important;
+}
