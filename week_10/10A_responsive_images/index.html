@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Images & Web Formats</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="page-header">
+        <h1>My Cute Dog</h1>
+        <p>A few of my recent favorite pictures of my little dog.</p>
+      </header>
+
+      <section class="featured" aria-labelledby="featured-title">
+        <figure class="feature-photo">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="images/dog1-mobile.jpg"
+              type="image/jpeg"
+            />
+            <img
+              src="images/dog1-wide-1200.jpg"
+              srcset="
+                images/dog1-wide-480.jpg 480w,
+                images/dog1-wide-800.jpg 800w,
+                images/dog1-wide-1200.jpg 1200w
+              "
+              sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1200px) calc(100vw - 3rem), 72rem"
+              alt="A small black dog sleeping with a blanket."
+              decoding="async"
+            />
+          </picture>
+        </figure>
+      </section>
+      <section class="gallery" aria-labelledby="gallery-title">
+        <h2 id="gallery-title">Photo gallery</h2>
+        <div class="gallery-grid">
+          <figure>
+            <img
+              src="images/dog2.webp"
+              alt="A black dog sitting on a couch and wearing a pink jacket."
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <figure>
+            <img
+              src="images/dog3.webp"
+              alt="A sleepy black dog peeks out from under a blanket on the couch."
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <figure>
+            <img
+              src="images/dog4.webp"
+              alt="A close-up of a black dog lying on a blanket."
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <figure>
+            <img
+              src="images/dog5.webp"
+              alt="A black dog on a blue bed beside a small yellow toy duck."
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <p class="mb-2">&copy; Created by Breanna Calixto</p>
+        <a class="btn btn-outline-light" href="../../index.html">Back to Student Portal</a>
+      </footer>
+    </main>
+  </body>
+</html>
