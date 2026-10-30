@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chill Lounge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="video-header">
+        <video
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Background video header"
+        >
+            <source src="media/background_video.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+        <div class="header-text">
+            <h1>Chill Lounge</h1>
+            <p>Relax and enjoy some music and a calming video.</p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Music</h2>
+            <audio controls>
+                <source src="media/audio.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+        </section>
+        <section>
+            <h2>Video</h2>
+            <div class="youtube-video">
+                <iframe
+                    src="https://www.youtube.com/embed/GA1D88HF0xE?si=NZTkLRMJvatnEY-l"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Created by Breanna Calixto</p>
+        <a href="../../../index.html">Back to Student Portal</a>
+    </footer>
+</body>
+</html>
