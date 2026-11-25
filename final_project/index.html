@@ -30,6 +30,34 @@
     </header>
 
     <main class="page-main">
+        <section class="content-card featured-carousel" aria-label="Featured thumbnails">
+            <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show thumbnail 3"></button>
+                    <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="1" aria-label="Show thumbnail 10"></button>
+                    <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="2" aria-label="Show thumbnail 12"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/Thumbnail3.png" class="d-block w-100" alt="A Minecraft character in the center of a circle of other characters.">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Thumbnail10.png" class="d-block w-100" alt="Minecraft character running with a sword.">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Thumbnail12.png" class="d-block w-100" alt="A rich looking Minecraft character in the center, with an Easter bunny to the left and a farmer on the right.">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
         <section class="content-card" aria-labelledby="about-heading">
             <div class="about-layout">
                 <img class="about-profile" src="images/Profile.png" alt="Illustrated profile of Breanna">
@@ -46,5 +74,6 @@
         <p>&copy; Created by Breanna Calixto</p>
         <p>Contact me: <a href="mailto:breanna@example.com">breanna@example.com</a></p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
